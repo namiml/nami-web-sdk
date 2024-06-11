@@ -1,0 +1,31 @@
+{
+  "name": "@namiml/nami-web-sdk",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Nami Web SDK makes subscriptions & in-app purchases easy, with powerful built-in paywalls and A/B testing",
+  "scripts": {
+  },
+  "keywords": [
+    "in-app-purchase",
+    "ios",
+    "ipados",
+    "tvos",
+    "paywall",
+    "react",
+    "storekit",
+    "subscriptions",
+    "iap",
+    "play-billing",
+    "payments"
+  ],
+  "author": {
+    "username": "hellonami",
+    "name": "Nami ML Inc.",
+    "email": "hello@namiml.com"
+  },
+  "license": "SEE LICENSE FILE",
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}

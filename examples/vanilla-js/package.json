@@ -1,0 +1,33 @@
+{
+  "name": "@namiml/vanilla-js-nami-web-sdk",
+  "type": "module",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "start": "http-server -o"
+  },
+  "keywords": [
+    "in-app-purchase",
+    "ios",
+    "ipados",
+    "tvos",
+    "paywall",
+    "react-native",
+    "storekit",
+    "subscriptions",
+    "iap",
+    "play-billing",
+    "payments"
+  ],
+  "author": {
+    "username": "hellonami",
+    "name": "Nami ML Inc.",
+    "email": "hello@namiml.com"
+  },
+  "license": "SEE LICENSE FILE",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
