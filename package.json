@@ -6,17 +6,14 @@
   "scripts": {
   },
   "keywords": [
-    "in-app-purchase",
-    "ios",
-    "ipados",
-    "tvos",
     "paywall",
-    "react",
-    "storekit",
     "subscriptions",
-    "iap",
-    "play-billing",
-    "payments"
+    "react",
+    "vue",
+    "js",
+    "payments",
+    "saas",
+    "stripe"
   ],
   "author": {
     "username": "hellonami",
