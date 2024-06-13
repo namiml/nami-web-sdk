@@ -8,16 +8,13 @@
   },
   "keywords": [
     "in-app-purchase",
-    "ios",
-    "ipados",
-    "tvos",
     "paywall",
-    "react-native",
-    "storekit",
+    "js",
+    "web",
     "subscriptions",
     "iap",
-    "play-billing",
-    "payments"
+    "payments",
+    "stripe"
   ],
   "author": {
     "username": "hellonami",
