@@ -7,17 +7,12 @@
     "start": "webpack serve --config webpack.config.js"
   },
   "keywords": [
-    "in-app-purchase",
-    "ios",
-    "ipados",
-    "tvos",
     "paywall",
-    "react-native",
-    "storekit",
     "subscriptions",
-    "iap",
-    "play-billing",
-    "payments"
+    "react",
+    "payments",
+    "saas",
+    "stripe"
   ],
   "author": {
     "username": "hellonami",
