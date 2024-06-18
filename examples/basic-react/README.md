@@ -1,6 +1,6 @@
 # Basic React Example
 
-This directory contains a simple example of how to use the Nami Web SDK with a vanilla JavaScript application.
+This directory contains a simple example of how to use the Nami Web SDK with a basic React application.
 
 ## Project Structure
 
