@@ -1,0 +1,30 @@
+{
+  "name": "@namiml/vanilla-js-nami-web-sdk",
+  "type": "module",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "start": "http-server -o"
+  },
+  "keywords": [
+    "in-app-purchase",
+    "paywall",
+    "js",
+    "web",
+    "subscriptions",
+    "iap",
+    "payments",
+    "stripe"
+  ],
+  "author": {
+    "username": "hellonami",
+    "name": "Nami ML Inc.",
+    "email": "hello@namiml.com"
+  },
+  "license": "SEE LICENSE FILE",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

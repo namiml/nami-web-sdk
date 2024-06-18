@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+      "target": "ES2022",
+      "moduleResolution": "node",
+      "lib": ["ES2022", "DOM", "DOM.Iterable"],
+      "types": ["react", "react-dom"],
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "allowJs": true,
+      "isolatedModules": true,
+      "strictBindCallApply": true,
+      "noImplicitReturns": true,
+      "noFallthroughCasesInSwitch": true,
+      "noUncheckedIndexedAccess": true,
+      "noImplicitOverride": true,
+      "baseUrl": ".",
+      "jsx": "react-jsx",
+      "noUnusedLocals": true,
+      "noUnusedParameters": true
+    },
+    "include": [
+      "**/*.ts",
+      "**/*.tsx"
+    ],
+    "exclude": [
+      "node_modules",
+      "dist"
+    ]
+  }
