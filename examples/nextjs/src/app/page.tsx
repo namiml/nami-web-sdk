@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import { Nami, NamiCampaignManager } from "@namiml/web-sdk";
 
-const APP_PLATFORM_ID = '1b00e08b-73ca-47c2-b288-49ce5bd45403'; // Your App Platform ID
+const APP_PLATFORM_ID = ''; // Your App Platform ID
 
 
 export default function Paywall() {
