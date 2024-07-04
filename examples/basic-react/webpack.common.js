@@ -6,7 +6,6 @@ const __dirname = dirname(__filename);
 
 export default {
     entry: './src/index.tsx',
-    mode: 'development',
     module: {
         rules: [
             {
@@ -24,13 +23,8 @@ export default {
         path: path.resolve(__dirname, 'dist'),
         publicPath: '/dist',
     },
-    devServer: {
-        static: [
-            { directory: path.join(__dirname, 'dist'), watch: true },
-            { directory: __dirname, watch: true },
-        ],
-        compress: true,
-        open: true,
-        port: 8000,
-    },
+    externals: {
+        react: 'React',
+        'react-dom': 'ReactDOM'
+    }
 };
