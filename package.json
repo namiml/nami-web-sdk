@@ -3,7 +3,9 @@
   "private": true,
   "version": "1.0.0",
   "description": "Nami Web SDK makes subscriptions & in-app purchases easy, with powerful built-in paywalls and A/B testing",
+  "type": "module",
   "scripts": {
+    "build:basic-react": "node ./scripts/build.js"
   },
   "keywords": [
     "paywall",
@@ -22,7 +24,11 @@
   },
   "license": "SEE LICENSE FILE",
   "dependencies": {
+    "dotenv": "^16.4.5"
   },
   "devDependencies": {
+    "fs-extra": "^11.2.0",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
   }
 }

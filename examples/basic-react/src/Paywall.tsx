@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Nami, NamiCampaignManager } from '@namiml/web-sdk';
 
-const APP_PLATFORM_ID = ''; // Your App Platform ID
+const APP_PLATFORM_ID = 'YOUR_APP_PLATFORM_ID'; // Your App Platform ID
 
 const Paywall: React.FC = () => {
     const paywallContainerRef = useRef<HTMLDivElement>(null);

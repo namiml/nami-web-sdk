@@ -4,7 +4,9 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "start": "webpack serve --config webpack.config.js"
+    "start": "webpack serve --config webpack.dev.js",
+    "prebuild": "yarn install",
+    "build": "webpack --config webpack.prod.js"
   },
   "keywords": [
     "paywall",
@@ -21,7 +23,7 @@
   },
   "license": "SEE LICENSE FILE",
   "dependencies": {
-    "@namiml/web-sdk": "^0.0.1-alpha.6",
+    "@namiml/web-sdk": "^1.1.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
@@ -32,6 +34,11 @@
     "typescript": "^5.4.5",
     "webpack": "^5.91.0",
     "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.7.3"
+    "webpack-dev-server": "^4.7.3",
+    "webpack-merge": "^6.0.1"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }

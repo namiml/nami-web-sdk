@@ -64,10 +64,10 @@
   dependencies:
     "@lit-labs/ssr-dom-shim" "^1.2.0"
 
-"@namiml/web-sdk@^0.0.1-alpha.6":
-  version "0.0.1-alpha.6"
-  resolved "https://registry.yarnpkg.com/@namiml/web-sdk/-/web-sdk-0.0.1-alpha.6.tgz#37328784616c9bc1ab49147e793307e3959f359e"
-  integrity sha512-LwAOfMU7rqDgWe4Re1ETZPkHmmqctc1WEpv/1gj2C52P0uyMvjmamdh5mymiEcsIdEHNt8OH/os+TMzD4Tx2zg==
+"@namiml/web-sdk@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@namiml/web-sdk/-/web-sdk-1.1.0.tgz#2e1c2c6bd39b52543ef42b5094b799c6b26c09b1"
+  integrity sha512-NB9KRrpBid10MsP1p7A12rQ5ggnh216nsCp/5S4EV0cETEqh9PXSVSiqJ1e+LfaLwqbsDsJ/j8f5yJbJxogvvw==
   dependencies:
     bowser "^2.11.0"
     lit "^3.1.3"
@@ -2253,6 +2253,15 @@ webpack-merge@^5.7.3:
     flat "^5.0.2"
     wildcard "^2.0.0"
 
+webpack-merge@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/webpack-merge/-/webpack-merge-6.0.1.tgz#50c776868e080574725abc5869bd6e4ef0a16c6a"
+  integrity sha512-hXXvrjtx2PLYx4qruKl+kyRSLc52V+cCvMxRjmKwoA+CBbbF5GfIBtR6kCvl0fYGqTUPKB+1ktVmTHqMOzgCBg==
+  dependencies:
+    clone-deep "^4.0.1"
+    flat "^5.0.2"
+    wildcard "^2.0.1"
+
 webpack-sources@^3.2.3:
   version "3.2.3"
   resolved "https://registry.yarnpkg.com/webpack-sources/-/webpack-sources-3.2.3.tgz#2d4daab8451fd4b240cc27055ff6a0c2ccea0cde"
@@ -2309,7 +2318,7 @@ which@^2.0.1:
   dependencies:
     isexe "^2.0.0"
 
-wildcard@^2.0.0:
+wildcard@^2.0.0, wildcard@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/wildcard/-/wildcard-2.0.1.tgz#5ab10d02487198954836b6349f74fff961e10f67"
   integrity sha512-CC1bOL87PIWSBhDcTrdeLo6eGT7mCFtrg0uIJtqJUFyK+eJnzl8A1niH56uu7KMa5XFrtiV+AQuHO3n7DsHnLQ==
