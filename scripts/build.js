@@ -22,16 +22,16 @@ try {
   // Ensure the temp build directory is clean
   fs.emptyDirSync(tempBuildPath);
 
+  // Copy entire example directory to temp build directory
+  fs.copySync(examplePath, tempBuildPath);
+  console.log(`Copied all files from ${examplePath} to ${tempBuildPath}`);
+
   // Run the initial build step for examples/basic-react
   execSync('yarn install && yarn build', {
     stdio: 'inherit',
     cwd: examplePath
   });
   console.log('Initial build of examples/basic-react completed successfully.');
-
-  // Copy entire example directory to temp build directory
-  fs.copySync(examplePath, tempBuildPath);
-  console.log(`Copied all files from ${examplePath} to ${tempBuildPath}`);
 
   // Modify Paywall.tsx for QA purposes
   const specificFilePath = path.join(tempBuildPath, 'src', 'Paywall.tsx');
