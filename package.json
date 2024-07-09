@@ -5,6 +5,7 @@
   "description": "Nami Web SDK makes subscriptions & in-app purchases easy, with powerful built-in paywalls and A/B testing",
   "type": "module",
   "scripts": {
+    "prebuild:basic-react": "yarn install",
     "build:basic-react": "node ./scripts/build.js"
   },
   "keywords": [

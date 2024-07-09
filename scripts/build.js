@@ -23,7 +23,7 @@ try {
   fs.emptyDirSync(tempBuildPath);
 
   // Run the initial build step for examples/basic-react
-  execSync('yarn build', {
+  execSync('yarn install && yarn build', {
     stdio: 'inherit',
     cwd: examplePath
   });
