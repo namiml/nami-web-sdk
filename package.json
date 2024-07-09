@@ -4,9 +4,13 @@
   "version": "1.0.0",
   "description": "Nami Web SDK makes subscriptions & in-app purchases easy, with powerful built-in paywalls and A/B testing",
   "type": "module",
+  "workspaces": [
+    "examples/*"
+  ],
   "scripts": {
-    "prebuild:basic-react": "yarn install",
-    "build:basic-react": "node ./scripts/build.js"
+    "prebuild:basic-react": "node ./scripts/prebuild:basic-react.js",
+    "build:basic-react": "yarn workspace @namiml/basic-react-nami-web-sdk build",
+    "postbuild:basic-react": "node ./scripts/postbuild:basic-react.js"
   },
   "keywords": [
     "paywall",
