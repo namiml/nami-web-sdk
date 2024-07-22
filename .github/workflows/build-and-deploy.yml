@@ -20,8 +20,8 @@ jobs:
     - name: Build
       run: yarn build:basic-react
       env:
-        APP_PLATFORM_ID: ${{ env.APP_PLATFORM_ID }}
-        APP_PAYWALL_LABEL: ${{ env.APP_PAYWALL_LABEL }}
+        APP_PLATFORM_ID: ${{ vars.APP_PLATFORM_ID }}
+        APP_PAYWALL_LABEL: ${{ vars.APP_PAYWALL_LABEL }}
 
     - name: Deploy to Cloudflare Pages
       run: yarn deploy:basic-react
