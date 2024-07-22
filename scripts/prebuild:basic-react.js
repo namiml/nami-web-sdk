@@ -24,7 +24,7 @@ try {
   code = code.replace('namiCommands: []', `namiCommands: ["useStagingAPI"]`);
   fs.writeFileSync(specificFilePath, code);
   
-  console.log(`Injected APP_PLATFORM_ID and APP_PAYWAL_LABEL into ${specificFilePath}`);
+  console.log(`Injected APP_PLATFORM_ID and APP_PAYWALL_LABEL into ${specificFilePath}`);
 } catch (error) {
   console.error('Error during build process:', error);
   process.exit(1);
