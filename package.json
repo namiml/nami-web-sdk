@@ -29,11 +29,12 @@
   },
   "license": "SEE LICENSE FILE",
   "dependencies": {
-    "dotenv": "^16.4.5"
   },
   "devDependencies": {
+    "dotenv": "^16.4.5",
     "fs-extra": "^11.2.0",
     "webpack": "^5.92.1",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "wrangler": "^3.65.1"
   }
 }
