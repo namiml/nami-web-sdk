@@ -5,7 +5,6 @@
   "version": "1.0.0",
   "scripts": {
     "start": "webpack serve --config webpack.dev.js",
-    "prebuild": "yarn install",
     "build": "webpack --config webpack.prod.js"
   },
   "keywords": [
