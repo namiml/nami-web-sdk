@@ -11,7 +11,7 @@
     "prebuild:basic-react": "node ./scripts/prebuild:basic-react.js",
     "build:basic-react": "yarn workspace @namiml/basic-react-nami-web-sdk build",
     "postbuild:basic-react": "node ./scripts/postbuild:basic-react.js",
-    "deploy:basic-react": "wrangler pages deploy temp-build --project=nami-web-sdk"
+    "deploy:basic-react": "wrangler pages deploy temp-build --project-name=nami-web-sdk"
   },
   "keywords": [
     "paywall",
