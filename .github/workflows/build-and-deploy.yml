@@ -20,15 +20,25 @@ jobs:
     - name: Build
       run: yarn build:basic-react
 
+    - name: Upload Build Artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: build-artifacts
+        path: temp-build
+
   deploy:
     runs-on: ubuntu-latest
     needs: build
     steps:
     - uses: actions/checkout@v4
 
-    - name: Deploy to Cloudflare Pages
-      uses: cloudflare/wrangler-action@v3
+    - name: Download Build Artifacts
+      uses: actions/download-artifact@v4
       with:
-        apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-        accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        command: pages deploy temp-build --project-name=nami-web-sdk
+        name: build-artifacts
+        path: temp-build
+
+    - name: Deploy to Cloudflare Pages using npm script
+      run: yarn deploy:basic-react
+      env:
+        CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
