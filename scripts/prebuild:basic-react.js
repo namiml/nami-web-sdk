@@ -21,7 +21,6 @@ try {
   let code = fs.readFileSync(specificFilePath, 'utf-8');
   code = code.replace('YOUR_APP_PLATFORM_ID', `${APP_PLATFORM_ID}`);
   code = code.replace('YOUR_PLACEMENT_LABEL', `${APP_PAYWALL_LABEL}`);
-  code = code.replace('namiCommands: []', `namiCommands: ["useStagingAPI"]`);
   fs.writeFileSync(specificFilePath, code);
   
   console.log(`Injected APP_PLATFORM_ID and APP_PAYWALL_LABEL into ${specificFilePath}`);
