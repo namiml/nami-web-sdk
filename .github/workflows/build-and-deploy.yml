@@ -20,6 +20,10 @@ jobs:
     - name: Install Dependencies
       run: yarn install
 
+    - name: Set productDetails
+      working-directory: examples/data
+      run: sed -i 's|"NAMI_PRODUCT_DETAILS"|${{ secrets.NAMI_PRODUCT_DETAILS }}|g' product-details.json
+
     - name: Build
       run: yarn build:basic-react
       env:

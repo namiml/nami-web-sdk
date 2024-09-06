@@ -29,8 +29,6 @@
     "email": "hello@namiml.com"
   },
   "license": "SEE LICENSE FILE",
-  "dependencies": {
-  },
   "devDependencies": {
     "dotenv": "^16.4.5",
     "fs-extra": "^11.2.0",
