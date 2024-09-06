@@ -3,7 +3,6 @@ import {
   Nami,
   NamiCampaignManager,
   NamiPaywallEvent,
-  NamiPaywallLaunchContext,
   NamiPaywallManager,
   LaunchCampaignError,
   NamiProductDetails,
