@@ -29,7 +29,7 @@ jobs:
       run: yarn build:basic-react
       env:
         APP_PLATFORM_ID: ${{ secrets.APP_PLATFORM_ID }}
-        APP_PAYWALL_LABEL: ${{ secrets.PLACEMENT_LABEL }}
+        PLACEMENT_LABEL: ${{ secrets.PLACEMENT_LABEL }}
 
     - name: Deploy to Cloudflare Pages
       run: yarn deploy:basic-react
