@@ -22,7 +22,7 @@ jobs:
 
     - name: Set productDetails
       working-directory: examples/data
-      run: sed -i 's|"NAMI_PRODUCT_DETAILS"|${{ secrets.NAMI_PRODUCT_DETAILS }}|g' product-details.json
+      run: node ./scripts/product-details.js
 
     - name: Build
       run: yarn build:basic-react
