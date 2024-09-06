@@ -8,7 +8,6 @@ const APP_PLATFORM_ID = ''; // Your App Platform ID
     appPlatformID: APP_PLATFORM_ID,
     logLevel: 'debug',
     namiLanguageCode: "en",
-    namiCommands: ['useStagingAPI'],
   });
 
   // Set product details for the paywall.
@@ -22,17 +21,11 @@ const APP_PLATFORM_ID = ''; // Your App Platform ID
     console.log("Launch result Handler accessed...", success, error);
   };
 
-  const context = {
-    productGroups: [],
-    customAttributes: {},
-    customObject: {},
-  };
-
   // Create the paywall component
   const paywallComponent = NamiCampaignManager.launch(
     'YOUR_PLACEMENT_LABEL',
-    'YOUR_PLACEMENT_VALUE',
-    context,
+    undefined,
+    undefined,
     resultHandler,
     actionHandler
   );
