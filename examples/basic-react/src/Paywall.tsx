@@ -21,7 +21,6 @@ const Paywall: React.FC = () => {
       appPlatformID: APP_PLATFORM_ID,
       logLevel: 'debug',
       namiLanguageCode: "en",
-      namiCommands: ['useStagingAPI'],
     });
 
     // Set product details for the paywall.
@@ -37,17 +36,11 @@ const Paywall: React.FC = () => {
       console.log("Launch result Handler accessed...", success, error);
     };
 
-    const context: NamiPaywallLaunchContext = {
-      productGroups: [],
-      customAttributes: {},
-      customObject: {},
-    };
-
     // Create the paywall component
     const paywallComponent = NamiCampaignManager.launch(
       'YOUR_PLACEMENT_LABEL',
-      'YOUR_PLACEMENT_VALUE',
-      context,
+      undefined,
+      undefined,
       resultHandler,
       actionHandler
     );
