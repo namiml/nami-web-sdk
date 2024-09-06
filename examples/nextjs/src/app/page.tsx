@@ -24,7 +24,6 @@ export default function Paywall() {
       appPlatformID: APP_PLATFORM_ID,
       logLevel: "debug",
       namiLanguageCode: "en",
-      namiCommands: ["useStagingAPI"],
     });
 
     // Set product details for the paywall
@@ -40,17 +39,11 @@ export default function Paywall() {
       console.log("Launch result Handler accessed...", success, error);
     };
 
-    const context: NamiPaywallLaunchContext = {
-      productGroups: [],
-      customAttributes: {},
-      customObject: {},
-    };
-
     // Create the paywall component
     const component = NamiCampaignManager.launch(
       "YOUR_PLACEMENT_LABEL",
-      "YOUR_PLACEMENT_VALUE",
-      context,
+      undefined,
+      undefined,
       resultHandler,
       actionHandler
     );
