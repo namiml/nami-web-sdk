@@ -8,7 +8,7 @@ This directory contains a simple example of how to use the Nami Web SDK with a [
 
 This example demonstrates how to initialize the Nami SDK and launch a paywall.
 
-You will need to replace `APP_PLATFORM_ID` and `'YOUR_PLACEMENT_LABEL'` in src/Paywall.tsx with your actual App Platform ID and placement label.
+You will need to replace `APP_PLATFORM_ID` and `'YOUR_PLACEMENT_LABEL'` in src/app/page.tsx with your actual App Platform ID and placement label.
 
 1. Install the dependencies via NPM or Yarn:
 

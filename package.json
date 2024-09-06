@@ -1,5 +1,5 @@
 {
-  "name": "@namiml/nami-web-sdk",
+  "name": "@namiml/nami-web-sdk-examples",
   "private": true,
   "version": "1.0.0",
   "description": "Nami Web SDK makes subscriptions & in-app purchases easy, with powerful built-in paywalls and A/B testing",

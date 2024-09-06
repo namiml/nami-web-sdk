@@ -12,7 +12,7 @@ import {
 } from "@namiml/web-sdk";
 import productDetails from "../../../data/product-details.json";
 
-const APP_PLATFORM_ID = ''; // Your App Platform ID
+const APP_PLATFORM_ID = 'YOUR_APP_PLATFORM_ID'; // Your App Platform ID
 
 
 export default function Paywall() {
