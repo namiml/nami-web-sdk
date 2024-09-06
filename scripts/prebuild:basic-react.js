@@ -10,7 +10,7 @@ dotenv.config();
 
 // Define app specific variables
 const APP_PLATFORM_ID = process.env.APP_PLATFORM_ID;
-const APP_PAYWALL_LABEL = process.env.APP_PAYWALL_LABEL;
+const APP_PAYWALL_LABEL = process.env.PLACEMENT_LABEL;
 
 // Define the paths
 const examplePath = path.join(__dirname, '..', 'examples', 'basic-react');

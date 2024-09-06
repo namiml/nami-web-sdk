@@ -4,7 +4,7 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "start": "http-server -o"
+    "start": "http-server -o -a localhost -p 8000"
   },
   "keywords": [
     "in-app-purchase",
@@ -22,8 +22,6 @@
     "email": "hello@namiml.com"
   },
   "license": "SEE LICENSE FILE",
-  "dependencies": {
-  },
   "devDependencies": {
     "http-server": "^14.1.1"
   }

@@ -20,11 +20,17 @@ jobs:
     - name: Install Dependencies
       run: yarn install
 
+    - name: Set productDetails
+      working-directory: examples/data
+      run: node ./scripts/product-details.js
+      env:
+        NAMI_PRODUCT_DETAILS: '${{ secrets.NAMI_PRODUCT_DETAILS }}'
+
     - name: Build
       run: yarn build:basic-react
       env:
-        APP_PLATFORM_ID: ${{ vars.APP_PLATFORM_ID }}
-        APP_PAYWALL_LABEL: ${{ vars.APP_PAYWALL_LABEL }}
+        APP_PLATFORM_ID: ${{ secrets.APP_PLATFORM_ID }}
+        APP_PAYWALL_LABEL: ${{ secrets.PLACEMENT_LABEL }}
 
     - name: Deploy to Cloudflare Pages
       run: yarn deploy:basic-react
