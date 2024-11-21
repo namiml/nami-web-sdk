@@ -10,29 +10,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '20'
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
 
-    - name: Install Dependencies
-      run: yarn install
+      - name: Install Dependencies
+        run: yarn install
 
-    - name: Set productDetails
-      run: node ./scripts/product-details.js
-      env:
-        NAMI_PRODUCT_DETAILS: '${{ secrets.NAMI_PRODUCT_DETAILS }}'
+      - name: Set productDetails
+        run: node ./scripts/product-details.js
+        env:
+          NAMI_PRODUCT_DETAILS: "${{ secrets.NAMI_PRODUCT_DETAILS }}"
 
-    - name: Build
-      run: yarn build:basic-react
-      env:
-        APP_PLATFORM_ID: ${{ secrets.APP_PLATFORM_ID }}
-        PLACEMENT_LABEL: ${{ secrets.PLACEMENT_LABEL }}
+      - name: Build
+        run: yarn build:basic-react
+        env:
+          APP_PLATFORM_ID: ${{ secrets.APP_PLATFORM_ID }}
+          PLACEMENT_LABEL: ${{ secrets.PLACEMENT_LABEL }}
 
-    - name: Deploy to Cloudflare Pages
-      run: yarn deploy:basic-react
-      env:
-        CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_PAGES_API_TOKEN }}
-        CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      - name: Deploy to Cloudflare Pages
+        run: yarn deploy:basic-react
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_PAGES_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
