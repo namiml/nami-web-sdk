@@ -22,7 +22,7 @@
   },
   "license": "SEE LICENSE FILE",
   "dependencies": {
-    "@namiml/web-sdk": "^1.5.2",
+    "@namiml/web-sdk": "^1.5.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
