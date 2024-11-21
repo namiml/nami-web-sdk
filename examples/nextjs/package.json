@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@namiml/web-sdk": "^1.5.2",
+    "@namiml/web-sdk": "^1.5.3",
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18"

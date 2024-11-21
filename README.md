@@ -35,4 +35,4 @@ yarn add @namiml/web-sdk
 
 Example apps showing how to use the SDK are available in this repository in the [examples directory](https://github.com/namiml/nami-web-sdk/tree/main/examples).
 
-More information on configuring and using the SDK is available in our docs at [https://docs.namiml.com](https://docs.namiml.com).
+More information on configuring and using the SDK is available in our docs at [https://learn.namiml.com](https://learn.namiml.com).
